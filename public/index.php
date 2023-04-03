@@ -7,10 +7,10 @@
  */
 
 /**
- * Twig
+ * Twig 3.4.3
  */
-require_once dirname(__DIR__) . '/vendor/Twig/lib/Twig/Autoloader.php';
-Twig_Autoloader::register();
+require_once dirname(__DIR__) . '/vendor/autoload.php';
+//Twig_Autoloader::register(); // not needed in Twig 3.0
 
 
 /**
