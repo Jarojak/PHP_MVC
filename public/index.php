@@ -6,9 +6,6 @@
  * PHP version 5.4
  */
 
-// Require the controller class
-//require '../App/Controllers/Posts.php';
-
 /**
  * Autoloader
  */
@@ -24,8 +21,6 @@ spl_autoload_register(function ($class) {
 /**
  * Routing
  */
-//require '../Core/Router.php';
-
 $router = new Core\Router();
 
 // Add the routes
