@@ -44,9 +44,6 @@ class View
         static $twig = null;
 
         if ($twig === null) {
-            //$loader = new \Twig_Loader_Filesystem('../App/Views');
-            //$twig = new \Twig_Environment($loader);
-            //Twig 3.4.3
             $loader = new \Twig\Loader\FilesystemLoader(dirname(__DIR__) . '/App/Views');
             $twig = new \Twig\Environment($loader);
         }
