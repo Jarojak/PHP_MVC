@@ -27,7 +27,8 @@ class View
         if (is_readable($file)) {
             require $file;
         } else {
-            echo "$file not found";
+            //echo "$file not found";
+            throw new \Exception("$file not found");
         }
     }
 
@@ -45,7 +46,7 @@ class View
 
         if ($twig === null) {
             $loader = new \Twig\Loader\FilesystemLoader(dirname(__DIR__) . '/App/Views');
-            $twig = new \Twig\Environment($loader);
+             $twig = new \Twig\Environment($loader);
         }
 
         echo $twig->render($template, $args);
